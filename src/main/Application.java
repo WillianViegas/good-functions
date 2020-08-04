@@ -2,9 +2,13 @@ package main;
 
 import static funcs.CoinFunctions.retornaValorComJuros;
 import static funcs.DateFunctions.retornaADataDeHoje;
+import static funcs.DateFunctions.retornaADataNoPadraoBR;
+import static funcs.DateFunctions.retornaDataComDiferencaDias;
 
 import java.util.Date;
 import java.util.Scanner;
+
+import funcs.DateFunctions;
 
 public class Application {
 
@@ -15,6 +19,11 @@ public class Application {
 		
 		System.out.printf("Valor com juros: %.2f \n", retornaValorComJuros(100, 20));
 		
-		System.out.println(retornaADataDeHoje(new Date()));
+		System.out.println(retornaADataDeHoje());
+		
+		Date date = DateFunctions.retornaAStringEmData("06/08/2020 15:00:00");
+		System.out.println(retornaADataNoPadraoBR(date));
+		
+		System.out.println(retornaADataNoPadraoBR(retornaDataComDiferencaDias(new Date(), 3)));
 	}
 }
