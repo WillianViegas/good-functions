@@ -7,13 +7,16 @@ import static funcs.DateFunctions.retornaDataComDiferencaDias;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
+import funcs.CoinFunctions;
 import funcs.DateFunctions;
 
 public class Application {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Hello world");
@@ -30,5 +33,7 @@ public class Application {
 		System.out.println(DateFunctions.verificarDiaSemana(new Date(), 2));
 		
 		System.out.println(DateFunctions.verificaMes(new Date(), 8));
+		
+		System.out.println(CoinFunctions.retornaOValorComCambio(20.00, 5.39));
 	}
 }

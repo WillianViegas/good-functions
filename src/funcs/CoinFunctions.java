@@ -6,4 +6,9 @@ public class CoinFunctions {
 		double resultado = ((juros/ 100.0) * valor) + valor;
 		return resultado;
 	}
+	
+	public static double retornaOValorComCambio(double valor, double moeda) {
+		double resultado = valor * moeda;
+		return resultado;
+	}
 }
