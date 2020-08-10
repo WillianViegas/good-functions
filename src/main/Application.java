@@ -25,5 +25,7 @@ public class Application {
 		System.out.println(retornaADataNoPadraoBR(date));
 		
 		System.out.println(retornaADataNoPadraoBR(retornaDataComDiferencaDias(new Date(), 3)));
+		
+		System.out.println(DateFunctions.verificarDiaSemana(new Date(), 2));
 	}
 }

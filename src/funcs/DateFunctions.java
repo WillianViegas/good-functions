@@ -31,4 +31,10 @@ public class DateFunctions {
 		cal.add(Calendar.DATE, dias);
 		return cal.getTime();
 	}
+	
+	public static boolean verificarDiaSemana(Date data, int diaSemana) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(data);
+		return calendar.get(Calendar.DAY_OF_WEEK) == diaSemana;
+	}
 }
