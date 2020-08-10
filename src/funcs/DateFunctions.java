@@ -37,4 +37,10 @@ public class DateFunctions {
 		calendar.setTime(data);
 		return calendar.get(Calendar.DAY_OF_WEEK) == diaSemana;
 	}
+	
+	public static boolean verificaMes(Date date, int month) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		return calendar.get(Calendar.MONTH) + 1  == month;
+	}
 }

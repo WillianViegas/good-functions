@@ -5,6 +5,7 @@ import static funcs.DateFunctions.retornaADataDeHoje;
 import static funcs.DateFunctions.retornaADataNoPadraoBR;
 import static funcs.DateFunctions.retornaDataComDiferencaDias;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -27,5 +28,7 @@ public class Application {
 		System.out.println(retornaADataNoPadraoBR(retornaDataComDiferencaDias(new Date(), 3)));
 		
 		System.out.println(DateFunctions.verificarDiaSemana(new Date(), 2));
+		
+		System.out.println(DateFunctions.verificaMes(new Date(), 8));
 	}
 }
