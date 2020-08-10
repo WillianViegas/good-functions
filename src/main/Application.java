@@ -5,13 +5,13 @@ import static funcs.DateFunctions.retornaADataDeHoje;
 import static funcs.DateFunctions.retornaADataNoPadraoBR;
 import static funcs.DateFunctions.retornaDataComDiferencaDias;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
 import funcs.CoinFunctions;
 import funcs.DateFunctions;
+import funcs.IntFunctions;
 
 public class Application {
 
@@ -35,5 +35,15 @@ public class Application {
 		System.out.println(DateFunctions.verificaMes(new Date(), 8));
 		
 		System.out.println(CoinFunctions.retornaOValorComCambio(20.00, 5.39));
+		
+		System.out.println(IntFunctions.somar(10, 2));
+		
+		System.out.println(IntFunctions.subtrair(10, 2));
+		
+		System.out.println(IntFunctions.multiplicar(10, 2));
+		
+		System.out.println(String.format("%.2f", IntFunctions.dividir(10, 3)));
+		
+		System.out.println(IntFunctions.restoDivisao(4, 2));
 	}
 }
