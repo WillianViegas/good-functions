@@ -11,4 +11,13 @@ public class CoinFunctions {
 		double resultado = valor * moeda;
 		return resultado;
 	}
+	
+	public static double retornaOValorParcelado(double valor, int parcelas) {
+		return valor / parcelas;
+	}
+	
+	public static double retornaOValorParcelado(double valor, int parcelas, double juros) {
+		double valorComJuros = retornaValorComJuros(valor, juros);
+		return valorComJuros/ parcelas;
+	}
 }

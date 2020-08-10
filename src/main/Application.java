@@ -45,5 +45,9 @@ public class Application {
 		System.out.println(String.format("%.2f", IntFunctions.dividir(10, 3)));
 		
 		System.out.println(IntFunctions.restoDivisao(4, 2));
+		
+		System.out.println(CoinFunctions.retornaOValorParcelado(2000.00, 5));
+		
+		System.out.println(CoinFunctions.retornaOValorParcelado(2000.00, 5, 10));
 	}
 }
